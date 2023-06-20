@@ -1,8 +1,9 @@
 import React from 'react'
+import { Header } from '../container/Header'
 
 function App() {
   return (
-    <div>Hello React</div>
+    <Header />
   )
 }
 
