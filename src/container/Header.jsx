@@ -3,6 +3,7 @@ import "../styles/Header.css";
 import { NavFooter } from "./NavFooter";
 import { NavItem } from "./NavItem";
 import { NavItemLink } from "../component/NavItemLink";
+import { NavItemLinkToggel } from "../component/NavItemLinkToggel";
 import home from "../assets/icons/home.svg";
 import add from "../assets/icons/add.svg";
 import article from "../assets/icons/article.svg";
@@ -15,7 +16,6 @@ function Header() {
   const [isWallet, setIsWallet] = useState(false);
   const [isSettings, setIsSettings] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
-  const [isHome, setIsHome] = useState(false);
 
   return (
     <>
@@ -32,10 +32,10 @@ function Header() {
           </button>
           <div className="nav">
             <NavItem>
-              <NavItemLink link={"/"} picture={ home } text={"Home"} state={isHome} setState={setIsHome}/>
+              <NavItemLink link={"/"} picture={ home } text={"Home"}/>
             </NavItem>
             <NavItem>
-              <NavItemLink link={"/"} picture={ article } text={"Article"} state={isArticle} setState={setIsArticle} />
+              <NavItemLinkToggel link={"/"} picture={ article } text={"Article"} state={isArticle} setState={setIsArticle} />
               {isArticle && (
                 <div>
                   <div className="sub-item">
@@ -51,7 +51,7 @@ function Header() {
               )}
             </NavItem>
             <NavItem>
-              <NavItemLink link={"/"} picture={ browser } text={"Wallet"} state={isWallet} setState={setIsWallet}/>
+              <NavItemLinkToggel link={"/"} picture={ browser } text={"Wallet"} state={isWallet} setState={setIsWallet}/>
               {isWallet && (
                 <div>
                   <div className="sub-item">
@@ -68,10 +68,10 @@ function Header() {
             </NavItem>
 
             <NavItem>
-              <NavItemLink link={"/"} picture={ start } text={"Saved"} state={isSaved} setState={setIsSaved}/>
+              <NavItemLink link={"/"} picture={ start } text={"Saved"}/>
             </NavItem>
             <NavItem>
-              <NavItemLink link={"/"} picture={ settings } text={"Settings"} state={isSettings} setState={setIsSettings}/>
+              <NavItemLinkToggel link={"/"} picture={ settings } text={"Settings"} state={isSettings} setState={setIsSettings}/>
               {isSettings && (
                 <div>
                   <div className="sub-item">

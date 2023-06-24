@@ -1,8 +1,8 @@
 import React from "react";
 
-function NavItemLink({link, picture, text, state, setState}) {
+function NavItemLink({link, picture, text}) {
   return (
-    <button onClick={()=>setState(!state)}>
+    <button onClick={console.log('click')}>
       <img src={ picture } alt={ text } />
       <span>{ text }</span>
     </button>
