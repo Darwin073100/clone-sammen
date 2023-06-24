@@ -1,0 +1,110 @@
+.main-content .post-section{
+    padding-right:5px;
+    width: 70%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+.card-article{
+    background-color: var(--color-white-two);
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-picture figure{
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-red);
+    border-radius: 12px;
+    display: flex;
+    place-content: center;
+}
+.card-picture .figure-red{
+    background-color: var(--color-red);
+}
+.card-picture .figure-purple{
+    background-color: var(--color-purple);
+}
+.card-picture .figure-yellow{
+    background-color: var(--color-yellow);
+}
+
+.card-picture img{
+width: 180px;
+height: 180px;
+}
+
+.card-body{
+    padding: 12px;
+}
+
+.card-body-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info{
+    display: flex;
+    gap: 5px;
+}
+
+.user-info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+}
+.user{
+    color: var(--color-blue);
+}
+.category{
+    color: var(--color-red);
+}
+
+.card-body-body{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body-footer{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card-body-footer button{
+    background-color: var(--color-white-two);
+    color: var(--color-grey);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--color-blue);
+}
+.card-body-footer button img{
+    width: 12px;
+}
+.card-body-footer button:nth-child(1){
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+    color: var(--color-white);
+}
+
+.card-body-footer button:nth-child(1) span:nth-child(1){
+    color: var(--color-blue);
+}
+.card-body-footer button:nth-child(4){
+    background-color: var(--color-yellow);
+    border: 1px solid var(--color-yellow);
+    color: var(--color-dark);
+}
+

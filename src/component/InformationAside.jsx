@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/InformationAside.css";
 import { PorcentageBar } from "./PorcentageBar";
 
 function InformationAside() {

@@ -1,0 +1,115 @@
+.main-content .information{
+    padding-right: 10px;
+    width: 30%;
+}
+
+.my-wallet{
+    padding: 20px;
+    background-color: var(--color-dark);
+    color: var(--color-white-two);
+    border-radius: 16px;
+}
+
+.my-wallet .smn{
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin: 20px 0 10px 0;
+}
+
+.my-wallet button{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    color: var(--color-white-two);
+    background-color: var(--color-purple);
+}
+
+
+.author-top{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: var(--color-white-two);
+}
+
+.author{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.bar{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+}
+
+.bar-blue{
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
+.bar-purple{
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+}
+.bar-10{
+    width: 10%;
+}
+.bar-20{
+    width: 20%;
+}
+.bar-30{
+    width: 30%;
+}
+.bar-40{
+    width: 40%;
+}
+.bar-50{
+    width: 50%;
+}
+.bar-60{
+    width: 60%;
+}
+.bar-70{
+    width: 70%;
+}.bar-80{
+    width: 80%;
+}.bar-90{
+    width: 90%;
+}.bar-100{
+    width: 100%;
+}
+
+.author-body{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.author-top-information{
+    padding-top: 10px;
+    color: var(--color-blue);
+}
+
+.author-top-information strong{
+    color: var(--color-dark);
+}
+.author-top-information .votos{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.author-top-information .description span{
+    color: var(--color-purple);
+}
